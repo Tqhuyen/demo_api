@@ -1,2 +1,0 @@
-inp,output,flag,username,timestamp
-flagged\inp\ed8006c1f8b4a609e7a1\cat.1.jpg,"{""label"": ""dog"", ""confidences"": [{""label"": ""dog"", ""confidence"": 0.7}, {""label"": ""cat"", ""confidence"": 0.3}]}",,,2024-08-20 21:03:23.528765
