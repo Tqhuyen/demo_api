@@ -1,9 +1,11 @@
-import gradio as gr
+import flask 
+from flask import Flask
 
-def image_classifier(inp):
-    return {'cat': 0.3, 'dog': 0.7}
+app = Flask(__name__)
 
-demo = gr.Interface(fn=image_classifier, 
-                    inputs="image", 
-                    outputs="label")
-demo.launch(share=True)
+@app.route("/")
+def hello():
+    return "<h1>Hello</h1>"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
